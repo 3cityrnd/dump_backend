@@ -1,0 +1,6 @@
+class <lambda>(torch.nn.Module):
+    def forward(self, arg0_1: "Sym(s0)", arg1_1: "f32[1, s0][s0, 1]cuda:0"):
+         # File: /home/pablo/torch_compile/dump_backend.py:25 in torch_dynamo_resume_in_forward_at_24, code: x = x+50.0
+        add: "f32[1, s0][s0, 1]cuda:0" = torch.ops.aten.add.Tensor(arg1_1, 50.0);  arg1_1 = None
+        return (add,)
+        

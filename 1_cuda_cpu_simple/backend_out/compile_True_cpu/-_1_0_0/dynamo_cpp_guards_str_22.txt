@@ -1,0 +1,13 @@
+
+TREE_GUARD_MANAGER:
++- RootGuardManager
+| +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:520 in init_ambient_guards
+| +- GLOBAL_STATE: ___check_global_state()
+| +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+| +- GuardManager: source=L['x'], accessed_by=FrameLocalsGuardAccessor(key='x', framelocals_idx=0)
+| | +- TENSOR_MATCH: check_tensor(L['x'], Tensor, DispatchKeySet(CPU, BackendSelect, ADInplaceOrView, AutogradCPU), torch.float32, device=None, requires_grad=False, size=[1, None], stride=[None, 1])
+| | +- NO_HASATTR: hasattr(L['x'], '_dynamo_dynamic_indices') == False         
++- LAMBDA_GUARD: L['x'].stride()[0] == L['x'].size()[1]  # (unknown source L['x'].stride()[0], please file a bug)
++- LAMBDA_GUARD: 2 <= L['x'].size()[1]  # if x[0, 0] < 2.0:  # torch_compile/dump_backend.py:24 in torch_dynamo_resume_in_forward_at_22 (user code shown is first use of this value--the guard itself is not due user code but due to 0/1 specialization in the framework; to avoid specialization try torch._dynamo.mark_unbacked(tensor, dim))
+
+Guard latency = 0.47 us

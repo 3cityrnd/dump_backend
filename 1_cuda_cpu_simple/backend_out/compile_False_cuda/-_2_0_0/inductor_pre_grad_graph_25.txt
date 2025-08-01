@@ -1,0 +1,10 @@
+class GraphModule(torch.nn.Module):
+    def forward(self, L_x_: "f32[1, 4][4, 1]cuda:0"):
+        l_x_ = L_x_
+        
+         # File: /home/pablo/torch_compile/dump_backend.py:25 in torch_dynamo_resume_in_forward_at_24, code: x = x+50.0
+        x: "f32[1, 4][4, 1]cuda:0" = l_x_ + 50.0;  l_x_ = None
+        return (x,)
+        
+
+ # graph id: 136222360936144

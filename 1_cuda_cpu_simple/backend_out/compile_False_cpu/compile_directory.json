@@ -1,0 +1,224 @@
+{
+  "[0/0]": {
+    "artifacts": [
+      {
+        "name": "dynamo_graph_break_reason_0.txt",
+        "number": 0,
+        "suffix": "",
+        "url": "-_0_0_0/dynamo_graph_break_reason_0.txt"
+      },
+      {
+        "name": "dynamo_output_graph_1.txt",
+        "number": 1,
+        "suffix": "",
+        "url": "-_0_0_0/dynamo_output_graph_1.txt"
+      },
+      {
+        "name": "inductor_pre_grad_graph_2.txt",
+        "number": 2,
+        "suffix": "",
+        "url": "-_0_0_0/inductor_pre_grad_graph_2.txt"
+      },
+      {
+        "name": "before_recompile_pre_grad_3.txt",
+        "number": 3,
+        "suffix": "",
+        "url": "-_0_0_0/before_recompile_pre_grad_3.txt"
+      },
+      {
+        "name": "after_recompile_pre_grad_4.txt",
+        "number": 4,
+        "suffix": "",
+        "url": "-_0_0_0/after_recompile_pre_grad_4.txt"
+      },
+      {
+        "name": "aot_forward_graph_fw_metadata_5.txt",
+        "number": 5,
+        "suffix": "",
+        "url": "-_0_0_0/aot_forward_graph_fw_metadata_5.txt"
+      },
+      {
+        "name": "aot_inference_graph_6.txt",
+        "number": 6,
+        "suffix": "",
+        "url": "-_0_0_0/aot_inference_graph_6.txt"
+      },
+      {
+        "name": "inductor_output_code_coo7aalxjjxbim2fputpfp2gmrshspyygryftuq5spqyjq5664ir_7.html",
+        "number": 7,
+        "suffix": "",
+        "url": "-_0_0_0/inductor_output_code_coo7aalxjjxbim2fputpfp2gmrshspyygryftuq5spqyjq5664ir_7.html"
+      },
+      {
+        "name": "fx_graph_cache_hit_8.json",
+        "number": 8,
+        "suffix": "✅",
+        "url": "-_0_0_0/fx_graph_cache_hit_8.json"
+      },
+      {
+        "name": "aotautograd_cache_hit_9.json",
+        "number": 9,
+        "suffix": "✅",
+        "url": "-_0_0_0/aotautograd_cache_hit_9.json"
+      },
+      {
+        "name": "dynamo_cpp_guards_str_10.txt",
+        "number": 10,
+        "suffix": "",
+        "url": "-_0_0_0/dynamo_cpp_guards_str_10.txt"
+      },
+      {
+        "name": "compilation_metrics_11.html",
+        "number": 11,
+        "suffix": "",
+        "url": "-_0_0_0/compilation_metrics_11.html"
+      }
+    ]
+  },
+  "[1/0]": {
+    "artifacts": [
+      {
+        "name": "dynamo_graph_break_reason_12.txt",
+        "number": 12,
+        "suffix": "",
+        "url": "-_1_0_0/dynamo_graph_break_reason_12.txt"
+      },
+      {
+        "name": "dynamo_output_graph_13.txt",
+        "number": 13,
+        "suffix": "",
+        "url": "-_1_0_0/dynamo_output_graph_13.txt"
+      },
+      {
+        "name": "inductor_pre_grad_graph_14.txt",
+        "number": 14,
+        "suffix": "",
+        "url": "-_1_0_0/inductor_pre_grad_graph_14.txt"
+      },
+      {
+        "name": "before_recompile_pre_grad_15.txt",
+        "number": 15,
+        "suffix": "",
+        "url": "-_1_0_0/before_recompile_pre_grad_15.txt"
+      },
+      {
+        "name": "after_recompile_pre_grad_16.txt",
+        "number": 16,
+        "suffix": "",
+        "url": "-_1_0_0/after_recompile_pre_grad_16.txt"
+      },
+      {
+        "name": "aot_forward_graph_fw_metadata_17.txt",
+        "number": 17,
+        "suffix": "",
+        "url": "-_1_0_0/aot_forward_graph_fw_metadata_17.txt"
+      },
+      {
+        "name": "aot_inference_graph_18.txt",
+        "number": 18,
+        "suffix": "",
+        "url": "-_1_0_0/aot_inference_graph_18.txt"
+      },
+      {
+        "name": "inductor_output_code_cpiksgtiblpp7njididgmohgclvquyw6tu73ybtylhippltrqv4s_19.html",
+        "number": 19,
+        "suffix": "",
+        "url": "-_1_0_0/inductor_output_code_cpiksgtiblpp7njididgmohgclvquyw6tu73ybtylhippltrqv4s_19.html"
+      },
+      {
+        "name": "fx_graph_cache_hit_20.json",
+        "number": 20,
+        "suffix": "✅",
+        "url": "-_1_0_0/fx_graph_cache_hit_20.json"
+      },
+      {
+        "name": "aotautograd_cache_hit_21.json",
+        "number": 21,
+        "suffix": "✅",
+        "url": "-_1_0_0/aotautograd_cache_hit_21.json"
+      },
+      {
+        "name": "dynamo_cpp_guards_str_22.txt",
+        "number": 22,
+        "suffix": "",
+        "url": "-_1_0_0/dynamo_cpp_guards_str_22.txt"
+      },
+      {
+        "name": "compilation_metrics_23.html",
+        "number": 23,
+        "suffix": "",
+        "url": "-_1_0_0/compilation_metrics_23.html"
+      }
+    ]
+  },
+  "[2/0]": {
+    "artifacts": [
+      {
+        "name": "dynamo_output_graph_24.txt",
+        "number": 24,
+        "suffix": "",
+        "url": "-_2_0_0/dynamo_output_graph_24.txt"
+      },
+      {
+        "name": "inductor_pre_grad_graph_25.txt",
+        "number": 25,
+        "suffix": "",
+        "url": "-_2_0_0/inductor_pre_grad_graph_25.txt"
+      },
+      {
+        "name": "before_recompile_pre_grad_26.txt",
+        "number": 26,
+        "suffix": "",
+        "url": "-_2_0_0/before_recompile_pre_grad_26.txt"
+      },
+      {
+        "name": "after_recompile_pre_grad_27.txt",
+        "number": 27,
+        "suffix": "",
+        "url": "-_2_0_0/after_recompile_pre_grad_27.txt"
+      },
+      {
+        "name": "aot_forward_graph_fw_metadata_28.txt",
+        "number": 28,
+        "suffix": "",
+        "url": "-_2_0_0/aot_forward_graph_fw_metadata_28.txt"
+      },
+      {
+        "name": "aot_inference_graph_29.txt",
+        "number": 29,
+        "suffix": "",
+        "url": "-_2_0_0/aot_inference_graph_29.txt"
+      },
+      {
+        "name": "inductor_output_code_csaauuan5opwangxamf72k4xva6abxzs6nimy5nrqw7v7hqtziy4_30.html",
+        "number": 30,
+        "suffix": "",
+        "url": "-_2_0_0/inductor_output_code_csaauuan5opwangxamf72k4xva6abxzs6nimy5nrqw7v7hqtziy4_30.html"
+      },
+      {
+        "name": "fx_graph_cache_hit_31.json",
+        "number": 31,
+        "suffix": "✅",
+        "url": "-_2_0_0/fx_graph_cache_hit_31.json"
+      },
+      {
+        "name": "aotautograd_cache_hit_32.json",
+        "number": 32,
+        "suffix": "✅",
+        "url": "-_2_0_0/aotautograd_cache_hit_32.json"
+      },
+      {
+        "name": "dynamo_cpp_guards_str_33.txt",
+        "number": 33,
+        "suffix": "",
+        "url": "-_2_0_0/dynamo_cpp_guards_str_33.txt"
+      },
+      {
+        "name": "compilation_metrics_34.html",
+        "number": 34,
+        "suffix": "",
+        "url": "-_2_0_0/compilation_metrics_34.html"
+      }
+    ]
+  }
+}

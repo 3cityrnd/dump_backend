@@ -1,0 +1,11 @@
+
+TREE_GUARD_MANAGER:
++- RootGuardManager
+| +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:520 in init_ambient_guards
+| +- GLOBAL_STATE: ___check_global_state()
+| +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+| +- GuardManager: source=L['x'], accessed_by=FrameLocalsGuardAccessor(key='x', framelocals_idx=0)
+| | +- TENSOR_MATCH: check_tensor(L['x'], Tensor, DispatchKeySet(CPU, BackendSelect, ADInplaceOrView, AutogradCPU), torch.float32, device=None, requires_grad=False, size=[1, 4], stride=[4, 1])
+| | +- NO_HASATTR: hasattr(L['x'], '_dynamo_dynamic_indices') == False         
+
+Guard latency = 0.22 us

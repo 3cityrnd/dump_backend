@@ -1,0 +1,22 @@
+Graph break in user code at /home/pablo/torch_compile/dump_backend.py:24
+Graph Break Reason: Data-dependent branching
+  Explanation: Detected data-dependent branching (e.g. `if my_tensor.sum() > 0:`). Dynamo does not support tracing dynamic control flow.
+  Hint: This graph break is fundamental - it is unlikely that Dynamo will ever be able to trace through your code. Consider finding a workaround.
+  Hint: Use `torch.cond` to express dynamic control flow.
+
+  Developer debug context: attempted to jump with TensorVariable()
+
+User code traceback:
+  File "/home/pablo/torch_compile/dump_backend.py", line 41, in <module>
+    output = model(input_data)
+  File "/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pablo/torch_compile/dump_backend.py", line 24, in forward
+    if x[0, 0] < 2.0:
+

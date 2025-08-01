@@ -1,0 +1,9 @@
+class GraphModule(torch.nn.Module):
+    def forward(self, L_x_: "f32[1, 4][4, 1]cuda:0"):
+        l_x_ = L_x_
+        
+         # File: /home/pablo/torch_compile/dump_backend.py:24 in torch_dynamo_resume_in_forward_at_22, code: if x[0, 0] < 2.0:
+        getitem: "f32[][]cuda:0" = l_x_[(0, 0)];  l_x_ = None
+        lt: "b8[][]cuda:0" = getitem < 2.0;  getitem = None
+        return (lt,)
+        

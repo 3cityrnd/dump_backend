@@ -1,0 +1,201 @@
+
+<html>
+<head>
+    <style>
+    
+table td { vertical-align: top; }
+
+.stack-trie { white-space: nowrap; font-family: monospace; }
+.stack-trie ul { padding-left: 1ch;  }
+.stack-trie li { margin-left: 1ch; list-style-type: none;  }
+.stack-trie .marker {
+  cursor: pointer;
+}
+.stack-trie .marker.collapsed::before {
+  content: &quot;+ &quot;;
+}
+.stack-trie .marker:not(.collapsed)::before {
+  content: &quot;- &quot;;
+}
+.stack-trie a { text-decoration: none; }
+.stack-trie a:hover { text-decoration: underline; }
+.status-missing { background-color: purple; color: white; }
+.status-error { background-color: red; color: white; }
+.status-empty { background-color: white; color: black; }
+.status-ok { background-color: green; color: white; }
+.status-break { background-color: lime; color: black; }
+summary::-webkit-details-marker { color: #00ACF3; font-size: 125%; margin-right: 2px; }
+summary:focus { outline-style: none; }
+article &gt; details &gt; summary { font-size: 28px; margin-top: 16px; }
+details &gt; p { margin-left: 24px; }
+details details summary { font-size: 16px; }
+
+    </style>
+    <title>Compilation Metrics</title>
+    <base href="..">
+</head>
+<body>
+    <h1>Compilation Info for [1/0] </h1>
+    <p><details><summary>Stack</summary><div class='stack-trie'><ul><li>/home/pablo/torch_compile/dump_backend.py:22 in torch_dynamo_resume_in_forward_at_22<br>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ul></div></details></p>
+    <h2>Output files:</h2>
+    <ul>
+        
+            <li><a href="-_1_0_0/dynamo_graph_break_reason_12.txt">dynamo_graph_break_reason_12.txt</a> (12)</li>
+        
+            <li><a href="-_1_0_0/dynamo_output_graph_13.txt">dynamo_output_graph_13.txt</a> (13)</li>
+        
+            <li><a href="-_1_0_0/inductor_pre_grad_graph_14.txt">inductor_pre_grad_graph_14.txt</a> (14)</li>
+        
+            <li><a href="-_1_0_0/before_recompile_pre_grad_15.txt">before_recompile_pre_grad_15.txt</a> (15)</li>
+        
+            <li><a href="-_1_0_0/after_recompile_pre_grad_16.txt">after_recompile_pre_grad_16.txt</a> (16)</li>
+        
+            <li><a href="-_1_0_0/aot_forward_graph_fw_metadata_17.txt">aot_forward_graph_fw_metadata_17.txt</a> (17)</li>
+        
+            <li><a href="-_1_0_0/aot_inference_graph_18.txt">aot_inference_graph_18.txt</a> (18)</li>
+        
+            <li><a href="-_1_0_0/inductor_output_code_cqf3zluhrjpej63f55r24pljtfdqwuus77qo6dae22vvrotqw2f4_19.html">inductor_output_code_cqf3zluhrjpej63f55r24pljtfdqwuus77qo6dae22vvrotqw2f4_19.html</a> (19)</li>
+        
+            <li><a href="-_1_0_0/fx_graph_cache_hit_20.json">fx_graph_cache_hit_20.json</a> (20)</li>
+        
+            <li><a href="-_1_0_0/aotautograd_cache_hit_21.json">aotautograd_cache_hit_21.json</a> (21)</li>
+        
+            <li><a href="-_1_0_0/dynamo_cpp_guards_str_22.txt">dynamo_cpp_guards_str_22.txt</a> (22)</li>
+        
+    </ul>
+    <h2>Stack</h2>
+    <details><summary>Stack</summary><div class='stack-trie'><ul><li>/home/pablo/torch_compile/dump_backend.py:41 in &lt;module&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;output = model(input_data)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1751 in _wrapped_call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return self._call_impl(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1762 in _call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return forward_call(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:655 in _fn<br>&nbsp;&nbsp;&nbsp;&nbsp;return fn(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1751 in _wrapped_call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return self._call_impl(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1762 in _call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return forward_call(*args, **kwargs)</li>
+<li>/home/pablo/torch_compile/dump_backend.py:22 in torch_dynamo_resume_in_forward_at_22<br>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ul></div></details>
+    <h2>Compile Time(seconds)</h2>
+    <p>Entire Frame <abbr title="Total time spent in convert_frame function">[?]</abbr>: 0.020184</div>
+    <p>Backend <abbr title="Time spent running the backend compiler">[?]</abbr>: 0.010963</div>
+    
+    
+    <div>Dynamo Time Before Restart <abbr title="Total time spent restarting dynamo analysis">[?]</abbr>: 0.0</div>
+    <h2>Restarts and Failures</h2>
+    
+    <p> No failures! </p>
+    
+    
+    <p> No restarts! </p>
+    
+    <h2>Cache Metrics</h2>
+    <p>Cache Size: 0</p>
+    <p>Accumulated Cache Size: 0</p>
+    <h2>Graph Metrics</h2>
+    <p>Guard Count: 6</p>
+    <p>Shape Env Guards: 1</p>
+    <p>Graph Ops: 2</p>
+    <p>Graph Nodes: 5</p>
+    <p>Graph Inputs: 2</p>
+    <h2> Custom Ops </h2>
+    
+    
+    <h2>Symbolic shape specializations</h2>
+    <table>
+    <tr>
+        <th>Sym</th> <th>Source(s)</th> <th>Value</th> <th>User stack</th> <th>Framework stack</th>
+    </tr>
+    
+    </table>
+    <h2>Guards added fast</h2>
+    <table>
+    <tr>
+        <th>Expr</th> <th>User stack</th> <th>Framework stack</th>
+    </tr>
+    
+    <tr>
+        <td>s0 &lt;= 2147483647</td>
+        <td><details><summary>User Stack</summary><div class='stack-trie'><ul></ul></div></details></td>
+        <td><details><summary>Framework Stack</summary><div class='stack-trie'><ul><li>/home/pablo/torch_compile/dump_backend.py:41 in &lt;module&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;output = model(input_data)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1751 in _wrapped_call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return self._call_impl(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1762 in _call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return forward_call(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:655 in _fn<br>&nbsp;&nbsp;&nbsp;&nbsp;return fn(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1751 in _wrapped_call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return self._call_impl(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/nn/modules/module.py:1762 in _call_impl<br>&nbsp;&nbsp;&nbsp;&nbsp;return forward_call(*args, **kwargs)</li>
+<li>/home/pablo/torch_compile/dump_backend.py:22 in forward<br>&nbsp;&nbsp;&nbsp;&nbsp;if x[0, 0] == 2.0:</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:1432 in __call__<br>&nbsp;&nbsp;&nbsp;&nbsp;return self._torchdynamo_orig_callable(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:1213 in __call__<br>&nbsp;&nbsp;&nbsp;&nbsp;result = self._inner_convert(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:598 in __call__<br>&nbsp;&nbsp;&nbsp;&nbsp;return _compile(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:1059 in _compile<br>&nbsp;&nbsp;&nbsp;&nbsp;guarded_code = compile_inner(code, one_graph, hooks, transform)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_utils_internal.py:97 in wrapper_function<br>&nbsp;&nbsp;&nbsp;&nbsp;return function(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:761 in compile_inner<br>&nbsp;&nbsp;&nbsp;&nbsp;return _compile_inner(code, one_graph, hooks, transform)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:797 in _compile_inner<br>&nbsp;&nbsp;&nbsp;&nbsp;out_code = transform_code_object(code, transform)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/bytecode_transformation.py:1422 in transform_code_object<br>&nbsp;&nbsp;&nbsp;&nbsp;transformations(instructions, code_options)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:257 in _fn<br>&nbsp;&nbsp;&nbsp;&nbsp;return fn(*args, **kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/convert_frame.py:715 in transform<br>&nbsp;&nbsp;&nbsp;&nbsp;tracer.run()</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/symbolic_convert.py:3500 in run<br>&nbsp;&nbsp;&nbsp;&nbsp;super().run()</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/symbolic_convert.py:1337 in run<br>&nbsp;&nbsp;&nbsp;&nbsp;while self.step():</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/symbolic_convert.py:1246 in step<br>&nbsp;&nbsp;&nbsp;&nbsp;self.dispatch_table[inst.opcode](self, inst)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/symbolic_convert.py:711 in inner<br>&nbsp;&nbsp;&nbsp;&nbsp;jump_graph_break(self, inst, value)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/symbolic_convert.py:613 in jump_graph_break<br>&nbsp;&nbsp;&nbsp;&nbsp;self.output.compile_subgraph(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/output_graph.py:1144 in compile_subgraph<br>&nbsp;&nbsp;&nbsp;&nbsp;self.compile_and_call_fx_graph(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/output_graph.py:1437 in compile_and_call_fx_graph<br>&nbsp;&nbsp;&nbsp;&nbsp;compiled_fn = self.call_user_compiler(gm)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/output_graph.py:1487 in call_user_compiler<br>&nbsp;&nbsp;&nbsp;&nbsp;return self._call_user_compiler(gm)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/output_graph.py:1519 in _call_user_compiler<br>&nbsp;&nbsp;&nbsp;&nbsp;compiled_fn = compiler_fn(gm, self.example_inputs())</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/repro/after_dynamo.py:150 in __call__<br>&nbsp;&nbsp;&nbsp;&nbsp;compiled_gm = compiler_fn(gm, example_inputs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/__init__.py:2347 in __call__<br>&nbsp;&nbsp;&nbsp;&nbsp;return compile_fx(model_, inputs_, config_patches=self.config)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_inductor/compile_fx.py:2089 in compile_fx<br>&nbsp;&nbsp;&nbsp;&nbsp;return aot_autograd(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_dynamo/backends/common.py:101 in __call__<br>&nbsp;&nbsp;&nbsp;&nbsp;cg = aot_module_simplified(gm, example_inputs, **self.kwargs)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_functorch/aot_autograd.py:1160 in aot_module_simplified<br>&nbsp;&nbsp;&nbsp;&nbsp;compiled_fn = AOTAutogradCache.load(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/autograd_cache.py:702 in load<br>&nbsp;&nbsp;&nbsp;&nbsp;compiled_fn = entry.wrap_post_compile(args, aot_config, fx_config)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/autograd_cache.py:520 in wrap_post_compile<br>&nbsp;&nbsp;&nbsp;&nbsp;compiled_fw_func = self.compiled_fw.load(args, fx_config)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/autograd_cache.py:367 in load<br>&nbsp;&nbsp;&nbsp;&nbsp;result, cache_info = FxGraphCache.load_with_key(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_inductor/codecache.py:1296 in load_with_key<br>&nbsp;&nbsp;&nbsp;&nbsp;compiled_graph, cache_info = FxGraphCache._lookup_graph(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_inductor/codecache.py:1079 in _lookup_graph<br>&nbsp;&nbsp;&nbsp;&nbsp;check = bool(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/__init__.py:744 in __bool__<br>&nbsp;&nbsp;&nbsp;&nbsp;return self.node.bool_()</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/sym_node.py:596 in bool_<br>&nbsp;&nbsp;&nbsp;&nbsp;return self.guard_bool("", 0)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/sym_node.py:536 in guard_bool<br>&nbsp;&nbsp;&nbsp;&nbsp;r = self.evaluate()</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/sym_node.py:510 in evaluate<br>&nbsp;&nbsp;&nbsp;&nbsp;return self.shape_env.evaluate_sym_node(self, size_oblivious)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/symbolic_shapes.py:6655 in evaluate_sym_node<br>&nbsp;&nbsp;&nbsp;&nbsp;return self.evaluate_expr(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/recording.py:263 in wrapper<br>&nbsp;&nbsp;&nbsp;&nbsp;return retlog(fn(*args, **kwargs))</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/symbolic_shapes.py:6671 in evaluate_expr<br>&nbsp;&nbsp;&nbsp;&nbsp;return self._evaluate_expr(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/symbolic_shapes.py:6930 in _evaluate_expr<br>&nbsp;&nbsp;&nbsp;&nbsp;self._log_guard("eval", g, forcing_spec=forcing_spec)</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/fx/experimental/symbolic_shapes.py:6607 in _log_guard<br>&nbsp;&nbsp;&nbsp;&nbsp;trace_structured(</li>
+<li>/home/pablo/miniconda3/envs/311/lib/python3.11/site-packages/torch/_logging/_internal.py:1230 in trace_structured<br>&nbsp;&nbsp;&nbsp;&nbsp;record[name] = metadata_fn()</li>
+</ul></div></details></td>
+    </tr>
+    
+    </table>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Append the current URL's query parameters to all relative links on the page
+        const queryParams = new URLSearchParams(window.location.search);
+        if (queryParams.size === 0) return url; // No query params, return original URL
+
+        function appendQueryParams(url) {
+            const newURL = new URL((new Request(url)).url);  // new URL(<relative URL>) but it actually works
+            const newSearchParams = new URLSearchParams(newURL.searchParams);
+            console.log(newURL.searchParams);
+            console.log(newSearchParams);
+
+            // Append query parameters
+            for (const [key, value] of queryParams) {
+                newSearchParams.set(key, value);
+            }
+
+            newURL.search = newSearchParams;
+            return newURL;
+        }
+
+        // Select all relative links on the page
+        const relativeLinks = document.querySelectorAll('a[href]:not([href^="http://"]):not([href^="https://"]):not([href^="\#"])');
+
+        // Append query parameters to each relative link
+        relativeLinks.forEach((link) => {
+            link.setAttribute("href", appendQueryParams(link.getAttribute("href")))
+        });
+    });
+    </script>
+
+</body>
+</html>

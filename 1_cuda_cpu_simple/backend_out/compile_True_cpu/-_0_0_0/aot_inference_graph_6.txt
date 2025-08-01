@@ -1,0 +1,8 @@
+class <lambda>(torch.nn.Module):
+    def forward(self, arg0_1: "Sym(s0)", arg1_1: "f32[1, s0][s0, 1]cpu"):
+         # File: /home/pablo/torch_compile/dump_backend.py:22 in forward, code: if x[0, 0] == 2.0:
+        select: "f32[s0][1]cpu" = torch.ops.aten.select.int(arg1_1, 0, 0);  arg1_1 = None
+        select_1: "f32[][]cpu" = torch.ops.aten.select.int(select, 0, 0);  select = None
+        eq_1: "b8[][]cpu" = torch.ops.aten.eq.Scalar(select_1, 2.0);  select_1 = None
+        return (eq_1,)
+        

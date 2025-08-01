@@ -1,0 +1,8 @@
+class <lambda>(torch.nn.Module):
+    def forward(self, arg0_1: "f32[1, 4][4, 1]cpu"):
+         # File: /home/pablo/torch_compile/play.py:24 in torch_dynamo_resume_in_forward_at_22, code: if x[0, 0] < 2.0:
+        select: "f32[4][1]cpu" = torch.ops.aten.select.int(arg0_1, 0, 0);  arg0_1 = None
+        select_1: "f32[][]cpu" = torch.ops.aten.select.int(select, 0, 0);  select = None
+        lt: "b8[][]cpu" = torch.ops.aten.lt.Scalar(select_1, 2.0);  select_1 = None
+        return (lt,)
+        
